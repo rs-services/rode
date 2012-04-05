@@ -19,8 +19,8 @@ var Servers=Array.new();
 var servers_json=jQuery.ajax("/api/acct/" account_id + "/deployments/" + deployment_id + "/servers", {
 	method:'post',
 	headers: {"X-API-VERSION": "1.5", "Accept": "application/json, text/x-json"},
-	username: 'rshade@rightscale.com',
-	password: 'pitbulls rock'};);
+	username: '',
+	password: ''};);
 Servers = jQuery.parseJSON(servers_json);
 
 
